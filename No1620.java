@@ -5,7 +5,7 @@
 출력
 문제가 알파벳 -> 포켓몬 번호, 숫자 -> 포켓몬 번호에 해당하는 문자
 """
-
+// 못 풀었습니다..
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
