@@ -12,6 +12,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
+// 틀렸다고 나오는데 이유를 못찾음
 public class No1620 {
 	public static void main(String args[]) throws Exception {
 		// 버퍼를 통해 입력 값을 받음. n은 총 포켓몬 수, m은 찾아야하는 질문 수
