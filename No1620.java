@@ -17,23 +17,24 @@ public class No1620 {
 		// 버퍼를 통해 입력 값을 받음. n은 총 포켓몬 수, m은 찾아야하는 질문 수
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		
 		int N = Integer.parseInt(st.nextToken());
 		int M = Integer.parseInt(st.nextToken());
-		String[] a = new String[N];
 
 		// 포켓몬 도감 만들기
-		HashMap<String, String> pocket = new HashMap<String, String>();
+		String[] arrays = new String[N];
+		HashMap<String, Integer> pocket = new HashMap<>();
 		for (int i = 0; i < N; i++) {
 			String pocketmon = br.readLine();
-			pocket.put(pocketmon, Integer.toString(i+1));
-			a[i] = pocketmon;
+			pocket.put(pocketmon, i+1);
+			arrays[i] = pocketmon;
 		}
 		
         // 문제 받기
         for (int j = 0; j<M; j++){
 			try{
 				int n = Integer.parseInt(br.readLine());
-				System.out.println(a[n-1]);
+				System.out.println(arrays[n-1]);
 			}
 			catch(NumberFormatException e){
 				String name = br.readLine();
